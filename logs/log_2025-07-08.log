@@ -1,0 +1,16 @@
+[2025-07-08 18:28:38,602] INFO - Model Training initialized
+[2025-07-08 18:28:38,680] INFO - Data loaded successfully
+[2025-07-08 18:28:38,756] INFO - Sucessfully read the .yaml file
+[2025-07-08 18:28:38,757] INFO - Loaded configuration from config.yaml file
+[2025-07-08 18:28:38,923] INFO - Model created sucessfully
+[2025-07-08 18:28:38,924] INFO - Checkpoint directory created: artifacts/model_checkpoint
+[2025-07-08 18:28:38,924] ERROR - Error occurred in script: [D:\ML-Ops\2. Anime recommendation system\src\model_training.py] at line number: [113] with message: [Error in model training]
+[2025-07-08 18:37:47,305] INFO - Model Training initialized
+[2025-07-08 18:37:47,360] INFO - DAta loaded sucessfully
+[2025-07-08 18:37:47,404] INFO - Sucessfully read the .yaml file
+[2025-07-08 18:37:47,404] INFO - Loaded configuration from config.yaml file
+[2025-07-08 18:37:47,565] INFO - Model created sucessfully
+[2025-07-08 18:37:47,565] INFO - Checkpoint directory created: artifacts/model_checkpoint
+[2025-07-08 18:37:47,566] ERROR - Error occurred in script: [D:\ML-Ops\2. Anime recommendation system\src\model_training.py] at line number: [70] with message: [Error in model training]
+[2025-07-08 18:47:12,964] INFO - Model Training initialized
+[2025-07-08 18:47:13,031] ERROR - Error occurred in script: [D:\ML-Ops\2. Anime recommendation system\src\model_training.py] at line number: [22] with message: [Failed to load the data]

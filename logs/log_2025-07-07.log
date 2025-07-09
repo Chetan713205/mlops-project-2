@@ -1,0 +1,13 @@
+[2025-07-07 18:12:27,607] INFO - DataProcessing Initialized
+[2025-07-07 18:12:30,280] INFO - Data loaded sucessfully for data processing
+[2025-07-07 18:12:30,687] INFO - Filtered users sucessfully
+[2025-07-07 18:12:30,791] INFO - Scaling done for Rating column
+[2025-07-07 18:12:31,139] INFO - Encoding done for user and anime ids
+[2025-07-07 18:12:31,807] INFO - Data Splitt sucessfully
+[2025-07-07 18:12:31,960] INFO - user2user_encoded saved sucessfully in processed directory
+[2025-07-07 18:12:31,978] INFO - user2user_decoded saved sucessfully in processed directory
+[2025-07-07 18:12:32,064] INFO - anime2anime_encoded saved sucessfully in processed directory
+[2025-07-07 18:12:32,160] INFO - anime2anime_decoded saved sucessfully in processed directory
+[2025-07-07 18:12:46,241] INFO - all the training, testing data as well as rating_df.csv is saved now
+[2025-07-07 18:13:12,495] INFO - df and synopsis_df saved sucessfully
+[2025-07-07 18:13:12,508] INFO - Data processing pipeline run sucessfully

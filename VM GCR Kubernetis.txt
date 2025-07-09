@@ -1,0 +1,50 @@
+**********************************  THEORY  **********************************
+
+### **1. VM Instance (Virtual Machine)**
+
+A VM instance is like renting a physical computer in the cloud to run your applications.
+
+* **Pros:**
+
+  * Full control over the environment
+  * Suitable for custom configurations and heavy workloads
+
+* **Cons:**
+
+  * Time-consuming: Dependencies must be installed separately on each instance
+  * Not cost-efficient: You are billed even during low traffic or idle periods
+
+---
+
+### **2. Google Cloud Run**
+
+Google Cloud Run allows you to **containerize your application** (e.g., using Docker) and deploy it directly.
+
+* **Pros:**
+
+  * Ideal for small to medium-sized applications
+  * Simplifies deployment with automatic scaling based on traffic
+  * Fully managed by Google, so less operational overhead
+
+* **Cons:**
+
+  * Limited customization options compared to VMs or Kubernetes
+  * Not suitable for complex, stateful, or long-running workloads
+
+---
+
+### **3. Kubernetes (e.g., Google Kubernetes Engine)**
+
+Kubernetes manages containerized applications across a cluster of machines. It can automatically scale based on traffic.
+
+* **Pros:**
+
+  * Automatically creates and manages multiple replicas (e.g., Pod1, Pod2, Pod3)
+  * Cost-efficient: Automatically scales up/down based on traffic
+  * High customization: Suitable for complex microservice architectures
+  * Easily configurable for high availability, load balancing, etc.
+
+* **Cons:**
+
+  * Slightly steeper learning curve
+  * Requires more configuration and management upfront
