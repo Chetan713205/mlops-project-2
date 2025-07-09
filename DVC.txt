@@ -1,0 +1,27 @@
+Data Versioning and Code Versioning:
+------------------------------------
+1. Create a seperate bucket in GCP where we will be doing our Data Versioning
+2. Edit acess, enter your service account in add principle, grant storage object admin, storage obj viewer access
+3. In requirenemts.txt list "dvc"
+	* Git : used for code tracking
+	* DVC : used for artifacts tracking
+4. Initialize git and dvc
+	* git init
+	* dvc init
+5. In root directory create file .gitignore add the folders to be ignored
+	artifacts/raw/
+	artifacts/processed/
+	artifacts/model/
+	artifacts/weights/
+	artifacts/model_checkpoint/         Why? Because we want them to be tracked by dvc, 
+					    One folder can be tracked by one Scource Code Manager dvc/git
+6. git add .
+7. git commit -m "commit"
+8. Create new github repo give name and create
+9. In github "…or create a new repository on the command line" section
+   Copy and paste the following commands
+	* git branch -M main
+	* git remote add origin https://github.com/Chetan713205/mlops-project-2.git
+	* git push origin main  --> PUSHES ALL CODES TO GitHub
+10. In order to track artifacts folder by dvc
+
