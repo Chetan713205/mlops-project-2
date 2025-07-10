@@ -24,4 +24,16 @@ Data Versioning and Code Versioning:
 	* git remote add origin https://github.com/Chetan713205/mlops-project-2.git
 	* git push origin main  --> PUSHES ALL CODES TO GitHub
 10. In order to track artifacts folder by dvc
+	* dvc add artifacts/raw
+	* dvc add artifacts/processed
+	* dvc add artifacts/model
+	* dvc add artifacts/weights
+	* dvc add artifacts/model_checkpoint    #We want Git to track .DVC files generated
+11. dvc status
+12. So Pushing the codes to GitHub again
+	* git add .
+	* git commit -m "commit"
+	* git push origin main                 # In the artifacts folder we have .DVC file in GitHub
+13. In order to store the dvc file into the newly created bucket we need to connect
+	* add in requirements.txt "dvc-gs" --> pip install -e .
 

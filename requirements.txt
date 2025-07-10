@@ -10,3 +10,4 @@ scikit-learn
 comet-ml
 dvc
 tf-nightly-cpu
+dvc-gs
