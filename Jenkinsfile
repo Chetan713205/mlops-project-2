@@ -1,11 +1,11 @@
 pipeline {
     agent any
-        environment {
-            VENV_DIR = 'venv'
-            GCP_PROJECT = 'gen-lang-client-0389229415'
-            GCLOUD_PATH = "/var/jenkins_home/google-cloud-sdk/bin"
-            KUBECTL_AUTH_PLUGIN = "/usr/lib/google-cloud-sdk/bin"
-        }
+    environment {
+        VENV_DIR = 'venv'
+        GCP_PROJECT = 'gen-lang-client-0389229415'
+        GCLOUD_PATH = "/var/jenkins_home/google-cloud-sdk/bin"
+        KUBECTL_AUTH_PLUGIN = "/usr/lib/google-cloud-sdk/bin"
+    }
 
     stages{
         stage('Cloning GitHub repo to Jenkins') {
@@ -57,6 +57,9 @@ pipeline {
                         docker push gcr.io/${GCP_PROJECT}/ml-project:latest
                         '''
                     }
+                }
+            }
+        }
         stage('Deploying to Kubernetes'){
             steps{
                 withCredentials([file(credentialsId:'gcp-key' , variable: 'GOOGLE_APPLICATION_CREDENTIALS' )]){
@@ -69,6 +72,7 @@ pipeline {
                         gcloud container clusters get-credentials ml-app-cluster --region us-central1
                         kubectl apply -f deployment.yaml
                         '''
+                    }
                 }
             }
         }
