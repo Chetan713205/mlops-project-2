@@ -36,4 +36,22 @@ Data Versioning and Code Versioning:
 	* git push origin main                 # In the artifacts folder we have .DVC file in GitHub
 13. In order to store the dvc file into the newly created bucket we need to connect
 	* add in requirements.txt "dvc-gs" --> pip install -e .
+	* dvc remote add -d myremote gs://my-dvc-bucket93/   
+	* dvc push  
+	---------- If it doesnot works ---------- 
+	* gcloud auth activate-service-account <SERVICE_ACCOUNT_EMAIL> --key-file="D:\gen-lang-client-0389229415-58240cc01804.json"
+	* gcloud auth list
+	* gsutil ls gs://my-dvc-bucket93/
+	* dvc push                              # GCP stores data in form of hashing algorithm       
+14. In order to pull the files from dvc to local storage system
+	* dvc pull
+
+----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+1. utils -> helpers.py -> add remaning functions of notebook 
+2. pipeline -> prediction_pipeline.py -> use the last function of notebook
+3. In root dir create application.py -> assign the recommendation system with flask app
+4. template -> index.html -> website html code
+5. static -> style.css -> link index.html with this .css file
+6. generate a code from chatGPT external css
 
