@@ -9,6 +9,6 @@ wordcloud
 scikit-learn
 comet-ml
 dvc
-tf-nightly-cpu
+tensorflow-cpu>=2.11.0
 dvc-gs
 flask
